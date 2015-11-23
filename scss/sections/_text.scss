@@ -1,0 +1,13 @@
+.separator-x {
+    position: relative;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: -20%;
+        display: block;
+        width: 1px;
+        height: 100%;
+        content: "";
+        background-color: #ededed;
+    }
+}
