@@ -100,10 +100,18 @@ h2 {
     }
     a {
         color: #fff;
+        img,
         span {
             margin-right: .3rem;
-            font-size: .9375rem;
+            font-size: 2rem;
             color: rgba(255, 255, 255, .5);
+            height: 2rem;
+            vertical-align: bottom;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1.5rem;
+                height: 1.5rem;
+            }
         }
         .icon-facebook {
             margin-right: .1rem;

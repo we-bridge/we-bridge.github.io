@@ -18,12 +18,21 @@
 <body>
 <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
     <div class="container">
+        <a class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
+            &#9776;
+        </a>
         <div id="collapsingNavbar" class="collapse navbar-toggleable-custom"
              role="tabpanel" aria-labelledby="collapsingNavbar">
             <ul class="nav navbar-nav pull-right">
                 <li class="nav-item nav-item-toggable active">
-                    <a class="nav-link" href="http://we-bridge.net">
+                    <a class="nav-link" href="#">
                         About Us <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="navbar-divider hidden-sm-down"></li>
+                <li class="nav-item nav-item-toggable">
+                    <a class="nav-link goToServices" href="#">
+                        Services
                     </a>
                 </li>
                 <li class="navbar-divider hidden-sm-down"></li>
@@ -34,14 +43,14 @@
                 </li>
                 <li class="navbar-divider hidden-sm-down"></li>
                 <li class="nav-item nav-item-toggable">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="careers.html">
                         Careers
                     </a>
                 </li>
                 <li class="navbar-divider hidden-sm-down"></li>
                 <li class="nav-item nav-item-toggable">
-                    <a class="nav-link"
-                       href="http://we-bridge.net/contacts.html">
+                    <a class="nav-link goToContact"
+                       href="#">
                         Contacts
                     </a>
                 </li>
@@ -88,24 +97,29 @@
                     <span class="fa fa-linkedin"></span>
                 </a>
             </li>
+            <li>
+                <a href='https://www.glassdoor.com/Overview/Working-at-W-E-Bridge-Technologies-EI_IE1124276.11,34.htm'>
+                    <img src='https://www.glassdoor.com/static/img/partnerCenter/badges/eng_CIRCLE_50x50.png'>
+                </a>
+            </li>
         </ul>
     </div>
 </header>
 
-<section id="section-intro" class="section-intro bg-faded text-center hidden-overflow">
+<section id="section-intro" class="bg-faded text-center hidden-overflow">
     <div class="container">
         <h3 class="wp wp-1">
-            Better Solutions for all, with W.E Bridge Technologies
+            Better Solutions for all
         </h3>
 
         <p class="lead wp wp-2">
             Spend less time managing and dealing with paperwork now: <br/>
             Our solutions make it <em>simple</em> for you make <em>great things</em>.
         </p>
-        <img src="img/mock.png" alt="iPad mock" class="img-responsive wp wp-3">
+        <img src="img/mock.png" alt="Surface mock" class="img-responsive wp wp-3">
     </div>
 </section>
-<section class="section-features text-center">
+<section id="section-features" class="text-center">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -127,7 +141,7 @@
                 <div class="card">
                     <div class="card-block">
                         <span class="fa fa-lightbulb-o display-1"></span>
-                        <h4 class="card-title">Custom</h4>
+                        <h4 class="card-title">Perfect Fit</h4>
                         <h6 class="card-subtitle text-muted">Just for You</h6>
 
                         <p class="card-text">
@@ -157,7 +171,73 @@
         </div>
     </div>
 </section>
-<section class="section-team text-center bg-inverse">
+<section id="section-services" class="bg-faded text-center">
+    <div class="container">
+        <h3>Our Services</h3>
+        <div class="row p-y-lg">
+            <div class="col-md-4 p-t-md wp wp-5">
+                <div class="card services-box">
+                    <div class="card-header text-uppercase">
+                        Web Development
+                    </div>
+                    <div class="card-block">
+                        <h4 class="card-text">
+                            Fully Responsive websites with the right technology
+                            <br>to match your business needs.
+                        </h4>
+                    </div>
+                    <ul class="list-group list-group-flush p-x">
+                        <li class="list-group-item">Landing Pages</li>
+                        <li class="list-group-item">Business Website</li>
+                        <li class="list-group-item">Showcase</li>
+                    </ul>
+                    <button class="btn btn-primary-outline goToContact">Get Started</button>
+                </div>
+            </div>
+            <div class="col-md-4 stacking-top">
+                <div class="card services-box services-best p-x-0">
+                    <div class="card-header text-uppercase">
+                        Custom Solutions
+                    </div>
+                    <div class="card-block">
+                        <h4 class="card-text">
+                            What your company really need, the right solution to increase
+                            productivity, visibility and support your business growth
+                            the right way.
+                        </h4>
+                    </div>
+                    <ul class="list-group list-group-flush p-x">
+                        <li class="list-group-item">Desktop Business Applications</li>
+                        <li class="list-group-item">Content Management Systems</li>
+                        <li class="list-group-item">Client Relationship Management</li>
+                        <li class="list-group-item">E-Commerce</li>
+                    </ul>
+                    <button class="btn btn-primary-outline goToContact">Get Started</button>
+                </div>
+            </div>
+            <div class="col-md-4 p-t-md wp wp-6">
+                <div class="card services-box">
+                    <div class="card-header text-uppercase">
+                        Mobile Development
+                    </div>
+                    <div class="card-block">
+                        <h4 class="card-text">
+                            Be part of the all-mobile revolution and provide your services
+                            on mobile with amazing User Experience.
+                        </h4>
+                    </div>
+                    <ul class="list-group list-group-flush p-x">
+                        <li class="list-group-item">Native Applications</li>
+                        <li class="list-group-item">Cross-Platform Apps</li>
+                        <li class="list-group-item">iOS, Android, Windows 10</li>
+                    </ul>
+                    <button class="btn btn-primary-outline goToContact">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<section class="section-team text-center bg-inverse">
     <div class="container">
         <h3 class="sr-only">Testimonials</h3>
 
@@ -266,7 +346,7 @@
             </ol>
         </div>
     </div>
-</section>
+</section>-->
 <section id="section-products" class="section section-padded">
     <div class="container">
         <div class="row text-center title">
@@ -363,7 +443,46 @@
             </div>
         </div>
         <div class="cut cut-bottom"></div>
+    </div>
 </section>
+<section id="section-contact" class="dark-bg text-center section-padding contact-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Drop us a line</h1>
+                <i class="fa fa-arrow-down"></i>
+            </div>
+        </div>
+        <div class="row contact-details">
+
+            <div class="col-md-6">
+                <a href="https://goo.gl/maps/aXjuvLk5abS2"
+                   target="_blank"
+                >
+                    <div class="light-box box-hover">
+                        <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+
+                        <p>#20 St. 51 Phnom Penh, Cambodia</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="mailto:contact@we-bridge.net?subject=Website Contact Request">
+
+                    <div class="light-box box-hover">
+                        <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+
+                        <p>
+                            contact@we-bridge.net
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer class="section-footer bg-inverse" role="contentinfo">
     <div class="container">
         <div class="row">
@@ -402,5 +521,24 @@
 <script src="js/plugins/jquery.placeholder.js"></script>
 <script src="js/plugins/chart.js"></script>
 <script src="js/webridge.js"></script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-55377980-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>

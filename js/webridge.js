@@ -117,7 +117,7 @@
                 $(window).scrollTo(
                     document.getElementById('section-intro'),
                     1000
-                )
+                );
             }
         );
 
@@ -127,9 +127,29 @@
                 $(window).scrollTo(
                     document.getElementById('section-products'),
                     1000
+                );
+            }
+        );
+
+        $('.goToContact').on(
+            'click',
+            function () {
+                $(window).scrollTo(
+                    document.getElementById('section-contact'),
+                    1000
                 )
             }
-        )
+        );
+
+        $('.goToServices').on(
+            'click',
+            function () {
+                $(window).scrollTo(
+                    document.getElementById('section-services'),
+                    1000
+                )
+            }
+        );
     }
 
     function init() {

@@ -1,0 +1,73 @@
+#section-services {
+    .services-box {
+        padding-bottom: 1.5625rem;
+        font-weight: 300;
+        background-color: #fcfefe;
+        border: 1px solid #eceff3;
+        .card-block {
+            padding: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                padding-top: 1.5625rem;
+            }
+        }
+        .card-header {
+            padding-top: 1.1rem;
+            padding-bottom: 1.1rem;
+            font-size: .8125rem;
+            font-weight: 600;
+            line-height: 1.1538;
+            background-color: #eceff3;
+            border-bottom: 0 none;
+            &:first-child {
+                border-radius: 0;
+            }
+        }
+        .card-title {
+            margin-bottom: .625rem;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 2;
+        }
+        h4 small {
+            font-size: .8125rem;
+            font-weight: 600;
+            line-height: 1.1538;
+            color: #aeb0b5;
+        }
+        .list-group {
+            margin-bottom: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                margin-bottom: 4.0625rem;
+            }
+        }
+        .list-group-item {
+            padding: .45rem 1rem;
+            background-color: transparent;
+            border-color: #ededef;
+        }
+        .list-group-item:first-child {
+            border-top-color: transparent;
+        }
+        .list-group-item:last-child {
+            border-bottom-color: transparent;
+        }
+    }
+
+    .services-best {
+        background-color: #fff;
+        border: 2px solid $brand-primary;
+
+        @include media-breakpoint-up(md) {
+            margin-right: -30px;
+            margin-left: -30px;
+        }
+        .card-header {
+            color: #fff;
+            background-color: $brand-primary;
+        }
+    }
+
+}
+

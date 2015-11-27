@@ -17,10 +17,12 @@ $font-family-sans-serif-custom: "Lato", sans-serif !default;
     background-color: #fff;
 }
 
-.section-intro,
-.section-features,
-.section-team,
-.section-text{
+#section-intro,
+#section-features,
+#section-team,
+#section-services,
+#section-products,
+#section-contact{
     padding-top: 2.8125rem;
 
     @include media-breakpoint-up(md) {
@@ -28,9 +30,10 @@ $font-family-sans-serif-custom: "Lato", sans-serif !default;
     }
 }
 
-.section-features,
-.section-text,
-.section-news{
+#section-features,
+#section-contact,
+#section-products,
+#section-services{
     padding-bottom: 2.8125rem;
 
     @include media-breakpoint-up(md) {
