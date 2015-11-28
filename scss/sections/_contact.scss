@@ -1,62 +1,49 @@
 #section-contact {
-    .contact-details {
-        margin: 70px 0;
+    .form-control {
+        &:focus {
+            box-shadow: 0 0 4px rgba(135, 121, 189, .53);
+            & + span {
+                color: $brand-primary;
+            }
+        }
     }
 
-    .contact-details h2 {
-        font-size: 20px;
+    .form-control-lg {
+        font-size: 1rem;
     }
 
-    .contact-details h2 span {
-        display: block;
-        color: #00a8ff;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 14px;
-        margin-top: 15px;
+    .form-group {
+        margin-bottom: 1.875rem;
     }
 
-    .light-box {
-        background-color: #fff;
-        -webkit-box-shadow: 0 3px 0 0 #f0f2f4;
-        -moz-box-shadow: 0 3px 0 0 #f0f2f4;
-        box-shadow: 0 3px 0 0 #f0f2f4;
-        padding: 20px 0;
+    .has-icon-left {
+        position: relative;
+
+        .form-control {
+            padding-left: 60px;
+        }
+
+        .icon {
+            position: absolute;
+            font-size: 1.5rem;
+            top: 18px;
+            left: 20px;
+            border-right: 1px solid #a4a4a4;
+            padding-right: 10px;
+        }
     }
 
-    .light-box:hover, .light-box:focus {
-        -webkit-box-shadow: 0 3px 0 0 #00a8ff;
-        -moz-box-shadow: 0 3px 0 0 #00a8ff;
-        box-shadow: 0 3px 0 0 #00a8ff;
+    .submit {
+        margin-left: auto;
+        margin-right: auto;
+        width: 33.33%;
+        min-width: 150px;
     }
 
-    .box-hover {
-        transition: all 500ms ease-in-out;
-        -webkit-transition: all 500ms ease-in-out;
-        -moz-transition: all 500ms ease-in-out;
-        -o-transition: all 500ms ease-in-out;
+    .section-title {
+        margin-bottom: 3rem;
     }
 
-    .box-hover:hover, .box-hover:focus {
-        transform: translate(0, -15px);
-        -webkit-transform: translate(0, -15px);
-        -ms-transform: translate(0, -15px);
-    }
-
-    h2 {
-        font-size: 15px;
-        color: #353535;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-
-    h2::after {
-        content: " ";
-        border: solid 2px #00a8ff;
-        display: block;
-        width: 35px;
-        margin: 25px auto;
-    }
 }
 
 #section-contact.contact-wrap {
@@ -65,8 +52,4 @@
 
 #section-contact.section-padding {
     padding: 90px 0 100px
-}
-
-#section-contact.dark-bg {
-    background: #f3f5f8;
 }

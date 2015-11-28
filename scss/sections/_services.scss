@@ -1,9 +1,15 @@
 #section-services {
+    color: #424753;
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
     .services-box {
         padding-bottom: 1.5625rem;
         font-weight: 300;
         background-color: #fcfefe;
-        border: 1px solid #eceff3;
+        border: 0;
         .card-block {
             padding: 1rem;
 
@@ -17,8 +23,9 @@
             font-size: .8125rem;
             font-weight: 600;
             line-height: 1.1538;
-            background-color: #eceff3;
+            background-color: $brand-primary;
             border-bottom: 0 none;
+            color: #fff;
             &:first-child {
                 border-radius: 0;
             }

@@ -27,7 +27,7 @@
         display: inline-block;
         margin-bottom: 40px;
         padding: 10px;
-        background: white;
+        background: #312F38;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
     }
@@ -44,7 +44,7 @@
     }
 
     .product:hover {
-        border-color: #00a8ff;
+        border-color: $brand-primary;
     }
 
     .product:hover .icon-holder {

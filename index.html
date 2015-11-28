@@ -18,9 +18,12 @@
 <body>
 <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
     <div class="container">
-        <a class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
+        <a class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse"
+           href="#collapsingNavbar" aria-expanded="false"
+           aria-controls="collapsingNavbar">
             &#9776;
         </a>
+
         <div id="collapsingNavbar" class="collapse navbar-toggleable-custom"
              role="tabpanel" aria-labelledby="collapsingNavbar">
             <ul class="nav navbar-nav pull-right">
@@ -99,7 +102,8 @@
             </li>
             <li>
                 <a href='https://www.glassdoor.com/Overview/Working-at-W-E-Bridge-Technologies-EI_IE1124276.11,34.htm'>
-                    <img src='https://www.glassdoor.com/static/img/partnerCenter/badges/eng_CIRCLE_50x50.png'>
+                    <img
+                        src='https://www.glassdoor.com/static/img/partnerCenter/badges/eng_CIRCLE_50x50.png'>
                 </a>
             </li>
         </ul>
@@ -119,7 +123,7 @@
         <img src="img/mock.png" alt="Surface mock" class="img-responsive wp wp-3">
     </div>
 </section>
-<section id="section-features" class="text-center">
+<section id="section-features" class="bg-inverse text-center">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -127,7 +131,7 @@
                     <div class="card-block">
                         <span class="fa fa-lock display-1"></span>
                         <h4 class="card-title">SaaS</h4>
-                        <h6 class="card-subtitle text-muted">Cloud Services</h6>
+                        <h6 class="card-subtitle">Cloud Services</h6>
 
                         <p class="card-text">
                             Premium Hosted Solutions in our Secure Cloud.
@@ -142,7 +146,7 @@
                     <div class="card-block">
                         <span class="fa fa-lightbulb-o display-1"></span>
                         <h4 class="card-title">Perfect Fit</h4>
-                        <h6 class="card-subtitle text-muted">Just for You</h6>
+                        <h6 class="card-subtitle">Just for You</h6>
 
                         <p class="card-text">
                             W.E Bridge provides more than the listed products,
@@ -158,7 +162,7 @@
                     <div class="card-block">
                         <span class="fa fa-heart display-1"></span>
                         <h4 class="card-title">Quality</h4>
-                        <h6 class="card-subtitle text-muted">In Code and Design</h6>
+                        <h6 class="card-subtitle">In Code and Design</h6>
 
                         <p class="card-text">
                             We take a point to make things right,
@@ -174,6 +178,7 @@
 <section id="section-services" class="bg-faded text-center">
     <div class="container">
         <h3>Our Services</h3>
+
         <div class="row p-y-lg">
             <div class="col-md-4 p-t-md wp wp-5">
                 <div class="card services-box">
@@ -191,7 +196,8 @@
                         <li class="list-group-item">Business Website</li>
                         <li class="list-group-item">Showcase</li>
                     </ul>
-                    <button class="btn btn-primary-outline goToContact">Get Started</button>
+                    <button class="btn btn-primary-outline goToContact">Get Started
+                    </button>
                 </div>
             </div>
             <div class="col-md-4 stacking-top">
@@ -212,7 +218,8 @@
                         <li class="list-group-item">Client Relationship Management</li>
                         <li class="list-group-item">E-Commerce</li>
                     </ul>
-                    <button class="btn btn-primary-outline goToContact">Get Started</button>
+                    <button class="btn btn-primary-outline goToContact">Get Started
+                    </button>
                 </div>
             </div>
             <div class="col-md-4 p-t-md wp wp-6">
@@ -231,7 +238,8 @@
                         <li class="list-group-item">Cross-Platform Apps</li>
                         <li class="list-group-item">iOS, Android, Windows 10</li>
                     </ul>
-                    <button class="btn btn-primary-outline goToContact">Get Started</button>
+                    <button class="btn btn-primary-outline goToContact">Get Started
+                    </button>
                 </div>
             </div>
         </div>
@@ -347,7 +355,7 @@
         </div>
     </div>
 </section>-->
-<section id="section-products" class="section section-padded">
+<section id="section-products" class="bg-inverse section section-padded">
     <div class="container">
         <div class="row text-center title">
             <h2>Products</h2>
@@ -445,17 +453,85 @@
         <div class="cut cut-bottom"></div>
     </div>
 </section>
-<section id="section-contact" class="dark-bg text-center section-padding contact-wrap">
+<section id="section-contact" class="bg-faded text-center section-padding contact-wrap">
     <div class="container">
-        <div class="row">
+        <div class="row section-title">
             <div class="col-md-12">
                 <h1>Drop us a line</h1>
                 <i class="fa fa-arrow-down"></i>
             </div>
         </div>
-        <div class="row contact-details">
+        <div class="row">
+            <form action="http://formspree.io/contact@we-bridge.net">
+                <div class="col-md-6">
+                    <div class="form-group has-icon-left form-control-name">
+                        <label class="sr-only" for="inputName">Your name</label>
+                        <i class="icon fa fa-user"></i>
+                        <input type="text"
+                               class="form-control form-control-lg"
+                               id="inputName"
+                               placeholder="Your name"
+                               name="name"
+                        >
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group has-icon-left form-control-email">
+                        <label class="sr-only" for="inputEmail">Email address</label>
+                        <i class="icon fa fa-envelope-o"></i>
+                        <input type="email"
+                               class="form-control form-control-lg"
+                               id="inputEmail"
+                               placeholder="Email address"
+                               name="_replyto"
+                               autocomplete="off"
+                        >
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group has-icon-left form-control-message">
+                        <label class="sr-only" for="inputMessage">
+                            Enter a Message
+                        </label>
+                        <i class="icon fa fa-file-text"></i>
+                        <textarea class="form-control form-control-lg"
+                                  id="inputMessage"
+                                  name="message"
+                                  placeholder="Message"
+                                  rows="5"
+                        ></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group submit">
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Submit
+                        </button>
+                    </div>
+                </div>
 
-            <div class="col-md-6">
+                <input type="hidden"
+                       name="_next"
+                       value="http://we-bridge.net"
+                />
+                <input type="hidden"
+                       name="_subject"
+                       value="Website Contact Request (Form)"
+                />
+                <input type="text"
+                       name="_gotcha"
+                       title="_gotcha"
+                       hidden
+                />
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer id="section-footer" class="bg-inverse" role="contentinfo">
+    <div class="container">
+        <div class="row contact-details">
+            <div class="col-md-4">
                 <a href="https://goo.gl/maps/aXjuvLk5abS2"
                    target="_blank"
                 >
@@ -466,7 +542,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <a href="mailto:contact@we-bridge.net?subject=Website Contact Request">
 
                     <div class="light-box box-hover">
@@ -477,14 +553,45 @@
                         </p>
                     </div>
                 </a>
-
+            </div>
+            <div class="col-md-4">
+                <div class="light-box box-hover">
+                    <h2><i class="fa fa-share"></i><span>Social Networks</span></h2>
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="https://github.com/we-bridge">
+                                <span class="fa fa-github"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://twitter.com/webridgecambo">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link"
+                               href="https://www.facebook.com/WE-Bridge-Technologies-1496633390571937/"
+                            >
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link"
+                               href="https://www.linkedin.com/company/w-e-bridge-technologies"
+                            >
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='https://www.glassdoor.com/Overview/Working-at-W-E-Bridge-Technologies-EI_IE1124276.11,34.htm'>
+                                <img
+                                    src='https://www.glassdoor.com/static/img/partnerCenter/badges/eng_CIRCLE_50x50.png'>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-<footer class="section-footer bg-inverse" role="contentinfo">
-    <div class="container">
         <div class="row">
             <div class="col-md-6 col-lg-5">
                 <div class="media">
@@ -498,6 +605,9 @@
             </div>
             <div class="col-md-6 col-lg-7">
                 <ul class="list-inline m-b-0">
+                    <li>
+                        <a href="careers.html">Careers</a>
+                    </li>
                     <li>
                         <button class="scroll-top">
                             Back to top
