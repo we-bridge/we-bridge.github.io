@@ -3934,9 +3934,13 @@ body {
 .jumbotron {
   padding-top: 7rem;
   margin-bottom: 0;
-  background: linear-gradient(45deg, rgba(102, 63, 181, 0.85), rgba(43, 139, 227, 0.85)), url(../img/bg-header.jpg) no-repeat center bottom;
-  background-size: cover;
   border-radius: 0; }
+  .jumbotron.home {
+    background: linear-gradient(45deg, rgba(102, 63, 181, 0.85), rgba(43, 139, 227, 0.85)), url(../img/bg-header.jpg) no-repeat center bottom;
+    background-size: cover; }
+  .jumbotron.careers {
+    background: linear-gradient(45deg, rgba(102, 63, 181, 0.85), rgba(43, 139, 227, 0.85)), url(../img/team.jpg) no-repeat center bottom;
+    background-size: cover; }
   @media (max-width: 47.9em) {
     .jumbotron {
       padding-top: 6.25rem; } }
