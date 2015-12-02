@@ -11,11 +11,23 @@ $custom-min-height: 37.5em; // 600
 .jumbotron {
     padding-top: 7rem;
     margin-bottom: 0;
-    background:
-        linear-gradient(45deg, rgba(#663FB5, 0.85), rgba(#2B8BE3, 0.85)),
-        url(../img/bg-header.jpg) no-repeat center bottom;
-    background-size: cover;
     border-radius: 0;
+
+    &.home
+    {
+        background:
+            linear-gradient(45deg, rgba(#663FB5, 0.85), rgba(#2B8BE3, 0.85)),
+            url(../img/bg-header.jpg) no-repeat center bottom;
+        background-size: cover;
+
+    }
+
+    &.careers {
+        background:
+            linear-gradient(45deg, rgba(#663FB5, 0.85), rgba(#2B8BE3, 0.85)),
+            url(../img/team.jpg) no-repeat center bottom;
+        background-size: cover;
+    }
 
     @include media-breakpoint-down(sm) {
         padding-top: 6.25rem;
